@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stinky New Year Shit</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        user-select: none;
+        user-zoom: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background-color: hwb(0 0% 100%);
+        display: grid;
+        place-content: center;
+        row-gap: 2rem;
+        cursor:url('/main/pawClick_11.png'), auto;
+    }
+    .text{
+        color:#ffffff;
+        font-size: 2rem;
+        font-weight: 560;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 0 1.5rem;
+        position: relative;
+        cursor:url('/main/pawPoint_11.png'), auto;
+    }
+    .text:nth-child(1)::before{
+       position: absolute;
+       content: 'Hover Me';
+       height: 100%;
+       width: 80%;
+       margin: auto;
+       inset: 0;
+       color: #000;
+       background-color: hwb(0 100% 0%);
+       left: 0;
+       transition: 200ms opacity;
+       opacity: 1;
+    }
+    .text:nth-child(1):is(:hover, :focus):before{
+        opacity: 0;
+    }
+    .text:nth-child(3){
+        text-align: right;
+        font-weight: 400;
+        font-size: .9rem;
+        color: hwb(0 100% 0% / 0.284);
+    }
+    .text:not(.text:nth-child(3))::first-letter{
+        color: hwb(0 0% 0%);
+    }
+</style>
+<body>
+        <span class="text">got ur ip lol.</span>
+        <span class="text">happy new year, love yall so fuckin much :D</span>
+        <span class="text"><cite>~Alan</cite></span>
+</body>
+</html>
